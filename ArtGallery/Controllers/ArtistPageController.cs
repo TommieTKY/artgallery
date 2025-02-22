@@ -18,8 +18,6 @@ namespace ArtGallery.Controllers
         public IActionResult List()
         {
             List<ArtistToListDto> artists = _api.List().Result.Value.ToList();
-
-            // Direct to the /Views/ArtistPage/List.cshtml
             return View(artists);
         }
 
@@ -39,6 +37,7 @@ namespace ArtGallery.Controllers
             return View();
         }
 
+        // POST: ArtistPage/Create -> Handles the creation of a new artist
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> Create(string artistName, string artistBiography)
@@ -66,6 +65,7 @@ namespace ArtGallery.Controllers
             return RedirectToAction("Details", new { id = ((Artist)artist).ArtistID });
         }
 
+        // GET: ArtistPage/ConfirmDelete/{id} -> A webpage that prompts the user to confirm the deletion of an artist
         [HttpGet]
         [Authorize]
         public IActionResult ConfirmDelete(int id)
@@ -74,6 +74,7 @@ namespace ArtGallery.Controllers
             return View(selectedArtist);
         }
 
+        // POST: ArtistPage/Delete/{id} -> Handles the deletion of an artist
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> Delete(int id)
@@ -82,6 +83,7 @@ namespace ArtGallery.Controllers
             return RedirectToAction("List");
         }
 
+        // GET: ArtistPage/Edit/{id} -> A webpage that prompts the user to edit an artist's information
         [HttpGet]
         [Authorize]
         public IActionResult Edit(int id)
@@ -90,7 +92,7 @@ namespace ArtGallery.Controllers
             return View(selectedArtist);
         }
 
-
+        // POST: ArtistPage/Update/{id} -> Handles the update of an artist's information
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> Update(int id, string artistName, string artistBiography)
@@ -108,9 +110,7 @@ namespace ArtGallery.Controllers
             {
                 return RedirectToAction("Details", new { id = id });
             }
-
             return View("Error");
         }
-
     }
 }

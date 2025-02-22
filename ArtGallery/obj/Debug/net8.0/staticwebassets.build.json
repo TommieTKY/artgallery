@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FIGF+mVEq+UiK8sLHlNfBS1vsW5DcPxpidlhuvzMyEU=",
+  "Hash": "M2t7ZAljxa6GLQuMuADW8NyBHIeNKjggZPTOQ4GoBQk=",
   "Source": "ArtGallery",
   "BasePath": "_content/ArtGallery",
   "Mode": "Default",
@@ -1485,6 +1485,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\artwork\\6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\wwwroot\\image\\artwork\\7.jpg",
+      "SourceId": "ArtGallery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\wwwroot\\",
+      "BasePath": "_content/ArtGallery",
+      "RelativePath": "image/artwork/7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fqkcxikatr",
+      "Integrity": "9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\artwork\\7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\wwwroot\\image\\artwork\\8.jpg",
+      "SourceId": "ArtGallery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\wwwroot\\",
+      "BasePath": "_content/ArtGallery",
+      "RelativePath": "image/artwork/8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fqkcxikatr",
+      "Integrity": "9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\artwork\\8.jpg"
     },
     {
       "Identity": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\wwwroot\\js\\site.js",
@@ -5743,6 +5785,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-DgaVtBu1EpO908MQ15FAAfv+XXzHy0hiK+AL2TbJCuE="
+        }
+      ]
+    },
+    {
+      "Route": "image/artwork/7.fqkcxikatr.jpg",
+      "AssetFile": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\wwwroot\\image\\artwork\\7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 07:36:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fqkcxikatr"
+        },
+        {
+          "Name": "label",
+          "Value": "image/artwork/7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g="
+        }
+      ]
+    },
+    {
+      "Route": "image/artwork/7.jpg",
+      "AssetFile": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\wwwroot\\image\\artwork\\7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 07:36:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g="
+        }
+      ]
+    },
+    {
+      "Route": "image/artwork/8.fqkcxikatr.jpg",
+      "AssetFile": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\wwwroot\\image\\artwork\\8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 07:48:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fqkcxikatr"
+        },
+        {
+          "Name": "label",
+          "Value": "image/artwork/8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g="
+        }
+      ]
+    },
+    {
+      "Route": "image/artwork/8.jpg",
+      "AssetFile": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\wwwroot\\image\\artwork\\8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 07:48:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g="
         }
       ]
     },

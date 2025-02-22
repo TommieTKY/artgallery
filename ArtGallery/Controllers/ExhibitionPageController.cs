@@ -22,8 +22,6 @@ namespace ArtGallery.Controllers
         public IActionResult List()
         {
             List<ExhibitionToListDto> exhibitions = _exhibitionsApi.List().Result.Value.ToList();
-
-            // Direct to the /Views/ExhibitionPage/List.cshtml
             return View(exhibitions);
         }
 
@@ -52,31 +50,27 @@ namespace ArtGallery.Controllers
             {
                 ExhibitionTitle = exhibitionTitle,
                 ExhibitionDescription = exhibitionDescription,
-                StartDate = DateOnly.FromDateTime(startDate), // Convert DateTime to DateOnly
-                EndDate = DateOnly.FromDateTime(endDate) // Convert DateTime to DateOnly
+                StartDate = DateOnly.FromDateTime(startDate),
+                EndDate = DateOnly.FromDateTime(endDate)
             };
 
             var result = await _exhibitionsApi.AddExhibition(newExhibition);
-
             if (result.Result == null)
             {
                 return View("Error");
             }
 
             var createdResult = result.Result as CreatedAtActionResult;
-
             if (createdResult?.Value == null)
             {
                 return View("Error");
             }
 
             var exhibition = createdResult.Value as Exhibition;
-
             if (exhibition == null)
             {
                 return View("Error");
             }
-
             return RedirectToAction("Details", new { id = exhibition.ExhibitionID });
         }
 
@@ -117,6 +111,7 @@ namespace ArtGallery.Controllers
             return View("Error");
         }
 
+        // POST: ExhibitionPage/Update -> Handles the update of an exhibition's information
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> Update(ViewExhibitionEdit model)
@@ -128,13 +123,11 @@ namespace ArtGallery.Controllers
 
             var exhibition = model.Exhibition;
 
-            // Validate input
             if (string.IsNullOrWhiteSpace(exhibition.ExhibitionTitle) || string.IsNullOrWhiteSpace(exhibition.ExhibitionDescription))
             {
                 ModelState.AddModelError(string.Empty, "Title and Description cannot be empty.");
                 return View("Error", new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
             }
-
             if (exhibition.StartDate == default || exhibition.EndDate == default)
             {
                 ModelState.AddModelError(string.Empty, "Start Date and End Date must be valid dates.");
@@ -142,13 +135,10 @@ namespace ArtGallery.Controllers
             }
 
             var result = await _exhibitionsApi.UpdateExhibition(exhibition.ExhibitionId, exhibition);
-
             if (result is NoContentResult)
             {
                 return RedirectToAction("Details", new { id = exhibition.ExhibitionId });
             }
-
-            Debug.WriteLine($"UpdateExhibition result: {result.GetType().Name}");
 
             var errorViewModel = new ErrorViewModel
             {
@@ -157,6 +147,7 @@ namespace ArtGallery.Controllers
             return View("Error", errorViewModel);
         }
 
+        // POST: ExhibitionPage/AddArtwork -> Adds an artwork to an exhibition
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> AddArtwork(int exhibitionId, int newArtworkId)
@@ -172,6 +163,7 @@ namespace ArtGallery.Controllers
             return RedirectToAction("Edit", new { id = exhibitionId });
         }
 
+        // POST: ExhibitionPage/RemoveArtwork -> Removes an artwork from an exhibition
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> RemoveArtwork(int exhibitionId, int artworkId)
@@ -187,3 +179,4 @@ namespace ArtGallery.Controllers
         }
     }
 }
+

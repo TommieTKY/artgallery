@@ -9,12 +9,12 @@ namespace ArtGallery.Controllers
 {
     public class ArtworkPageController : Controller
     {
-        private readonly ArtworksController _api;
+        private readonly ArtworksController _artworkApi;
         private readonly ArtistsController _artistsApi;
 
-        public ArtworkPageController(ArtworksController api, ArtistsController artistsApi)
+        public ArtworkPageController(ArtworksController artworkApi, ArtistsController artistsApi)
         {
-            _api = api;
+            _artworkApi = artworkApi;
             _artistsApi = artistsApi;
         }
 
@@ -22,9 +22,7 @@ namespace ArtGallery.Controllers
         [HttpGet]
         public IActionResult List()
         {
-            List<ArtworkToListDto> artworks = _api.List().Result.Value.ToList();
-
-            // Direct to the /Views/ArtworkPage/List.cshtml
+            List<ArtworkToListDto> artworks = _artworkApi.List().Result.Value.ToList();
             return View(artworks);
         }
 
@@ -32,7 +30,7 @@ namespace ArtGallery.Controllers
         [HttpGet]
         public async Task<IActionResult> Details(int id)
         {
-            var selectedArtwork = (await _api.FindArtwork(id)).Value;
+            var selectedArtwork = (await _artworkApi.FindArtwork(id)).Value;
 
             if (selectedArtwork == null)
             {
@@ -65,14 +63,13 @@ namespace ArtGallery.Controllers
             return View(model);
         }
 
-
+        // POST: ArtworkPage/Create -> Handles the creation of a new artwork
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> Create(ViewArtworkEdit model)
         {
             if (!ModelState.IsValid)
             {
-                // Populate the ArtistList again in case of validation errors
                 model.ArtistList = (await _artistsApi.List()).Value.ToList();
                 return View("New", model);
             }
@@ -85,7 +82,7 @@ namespace ArtGallery.Controllers
                 ArtistID = model.Artwork.ArtistID
             };
 
-            var result = await _api.AddArtwork(newArtwork);
+            var result = await _artworkApi.AddArtwork(newArtwork);
             if (result.Result == null)
             {
                 return View("Error");
@@ -105,7 +102,7 @@ namespace ArtGallery.Controllers
 
             if (model.ArtworkPic != null && model.ArtworkPic.Length > 0)
             {
-                var imageResult = await _api.UpdateArtworkImage(artwork.ArtworkID, model.ArtworkPic);
+                var imageResult = await _artworkApi.UpdateArtworkImage(artwork.ArtworkID, model.ArtworkPic);
                 if (imageResult is NoContentResult)
                 {
                     newArtwork.HasArtworkPic = true;
@@ -124,28 +121,30 @@ namespace ArtGallery.Controllers
             return RedirectToAction("Details", new { id = artwork.ArtworkID });
         }
 
-
+        // GET: ArtworkPage/ConfirmDelete/{id} -> A webpage that prompts the user to confirm the deletion of an artwork
         [HttpGet]
         [Authorize]
         public IActionResult ConfirmDelete(int id)
         {
-            var selectedArtwork = _api.FindArtwork(id).Result.Value;
+            var selectedArtwork = _artworkApi.FindArtwork(id).Result.Value;
             return View(selectedArtwork);
         }
 
+        // POST: ArtworkPage/Delete/{id} -> Handles the deletion of an artwork
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> Delete(int id)
         {
-            await _api.DeleteArtwork(id);
+            await _artworkApi.DeleteArtwork(id);
             return RedirectToAction("List");
         }
 
+        // GET: ArtworkPage/Edit/{id} -> A webpage that prompts the user to edit an artwork's information
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> Edit(int id)
         {
-            var selectedArtwork = await _api.FindArtwork(id);
+            var selectedArtwork = await _artworkApi.FindArtwork(id);
             if (selectedArtwork.Value is ArtworkItemDto artworkItemDto)
             {
                 var artists = await _artistsApi.List();
@@ -159,13 +158,14 @@ namespace ArtGallery.Controllers
             return View("Error");
         }
 
+        // POST: ArtworkPage/Update -> Handles the update of an artwork's information
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> Update(ViewArtworkEdit model)
         {
             if (!ModelState.IsValid)
             {
-                return View("Edit", model); // Return the Edit view with the model to display validation errors
+                return View("Edit", model);
             }
 
             var updateArtwork = new ArtworkItemDto
@@ -179,7 +179,7 @@ namespace ArtGallery.Controllers
 
             if (model.ArtworkPic != null && model.ArtworkPic.Length > 0)
             {
-                var result = await _api.UpdateArtworkImage(model.Artwork.ArtworkId, model.ArtworkPic);
+                var result = await _artworkApi.UpdateArtworkImage(model.Artwork.ArtworkId, model.ArtworkPic);
                 if (result is NoContentResult)
                 {
                     updateArtwork.HasArtworkPic = true;
@@ -195,7 +195,7 @@ namespace ArtGallery.Controllers
                 }
             }
 
-            var updateResult = await _api.UpdateArtwork(model.Artwork.ArtworkId, updateArtwork);
+            var updateResult = await _artworkApi.UpdateArtwork(model.Artwork.ArtworkId, updateArtwork);
 
             if (updateResult is NoContentResult)
             {
@@ -208,6 +208,5 @@ namespace ArtGallery.Controllers
             };
             return View("Error", errorViewModel2);
         }
-
     }
 }

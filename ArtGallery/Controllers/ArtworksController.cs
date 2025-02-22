@@ -60,9 +60,9 @@ namespace ArtGallery.Controllers
         /// <param name="ArtworkID">The ID of the artwork to retrieve.</param>
         /// <returns>An ArtworkDto object representing the artwork and its exhibitions.</returns>
         /// <example>
-        /// curl -X GET "https://localhost:7237/api/Artworks/FindArtwork/1"
+        /// curl -X GET "https://localhost:7145/api/Artworks/FindArtwork/1"
         /// -> {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.5","title":"Not Found","status":404,"traceId":"00-5f0313a8428ff59a614f95e61069534a-6bce3e3b8336c57b-00"}
-        /// curl -X GET "https://localhost:7237/api/Artworks/FindArtwork/7"
+        /// curl -X GET "https://localhost:7145/api/Artworks/FindArtwork/7"
         /// -> {"artworkId":7,"artworkTitle":"Whispers of the Wild","artworkMedium":"Watercolor","artworkYearCreated":2025,"artistID":1,"listExhibitions":[{"exhibitionId":1,"exhibitionTitle":"A Symphony of Nature's Beauty"},{"exhibitionId":3,"exhibitionTitle":"Defaced! Money, Conflict, Protest"}]}
         /// </example>
         [HttpGet(template: "FindArtwork/{ArtworkID}")]
@@ -101,15 +101,15 @@ namespace ArtGallery.Controllers
         /// <param name="artworkDto">The updated artwork details.</param>
         /// <returns>An IActionResult indicating the result of the update operation.</returns>
         /// <example>
-        /// curl -X PUT -H "Content-Type: application/json" -d "{\"artworkTitle\": \"Updated Artwork Title\", \"artworkMedium\": \"Oil on Canvas\", \"artworkYearCreated\": 2026, \"artistID\": 4}" "https://localhost:7237/api/Artworks/Update/16"
+        /// curl -X PUT -H "Content-Type: application/json" -d "{\"artworkTitle\": \"Updated Artwork Title\", \"artworkMedium\": \"Oil on Canvas\", \"artworkYearCreated\": 2026, \"artistID\": 4}" "https://localhost:7145/api/Artworks/Update/16"
         /// -> {"message":"Invalid artwork data"}
-        /// curl -X PUT -H "Content-Type: application/json" -d "{\"artworkTitle\": \" \", \"artworkMedium\": \"Oil on Canvas\", \"artworkYearCreated\": 2021, \"artistID\": 4}" "https://localhost:7237/api/Artworks/Update/16"
+        /// curl -X PUT -H "Content-Type: application/json" -d "{\"artworkTitle\": \" \", \"artworkMedium\": \"Oil on Canvas\", \"artworkYearCreated\": 2021, \"artistID\": 4}" "https://localhost:7145/api/Artworks/Update/16"
         /// -> {"message":"Invalid artwork data"}
-        /// curl -X PUT -H "Content-Type: application/json" -d "{\"artworkTitle\": \"Updated Artwork Title\", \"artworkMedium\": \"Oil on Canvas\", \"artworkYearCreated\": 2021, \"artistID\": 4}" "https://localhost:7237/api/Artworks/Update/16"
+        /// curl -X PUT -H "Content-Type: application/json" -d "{\"artworkTitle\": \"Updated Artwork Title\", \"artworkMedium\": \"Oil on Canvas\", \"artworkYearCreated\": 2021, \"artistID\": 4}" "https://localhost:7145/api/Artworks/Update/16"
         /// -> {"message":"Artist with ID 4 does not exist"}
-        /// curl -X PUT -H "Content-Type: application/json" -d "{\"artworkTitle\": \"Updated Artwork Title\", \"artworkMedium\": \"Oil on Canvas\", \"artworkYearCreated\": 2021, \"artistID\": 11}" "https://localhost:7237/api/Artworks/Update/16"
+        /// curl -X PUT -H "Content-Type: application/json" -d "{\"artworkTitle\": \"Updated Artwork Title\", \"artworkMedium\": \"Oil on Canvas\", \"artworkYearCreated\": 2021, \"artistID\": 11}" "https://localhost:7145/api/Artworks/Update/16"
         /// -> {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.5","title":"Not Found","status":404,"traceId":"00-c05cd8d1b3a58322c04703685e236050-a0ad45dde66b3b21-00"}
-        /// curl -X PUT -H "Content-Type: application/json" -d "{\"artworkTitle\": \"Updated Artwork Title\", \"artworkMedium\": \"Oil on Canvas\", \"artworkYearCreated\": 2021, \"artistID\": 11}" "https://localhost:7237/api/Artworks/Update/15"
+        /// curl -X PUT -H "Content-Type: application/json" -d "{\"artworkTitle\": \"Updated Artwork Title\", \"artworkMedium\": \"Oil on Canvas\", \"artworkYearCreated\": 2021, \"artistID\": 11}" "https://localhost:7145/api/Artworks/Update/15"
         /// -> (db updated: {"artworkId":15,"artworkTitle":"Updated Artwork Title","artworkMedium":"Oil on Canvas","artworkYearCreated":2021,"artistID":11,"listExhibitions":[{"exhibitionId":7,"exhibitionTitle":"New Exhibition"}]})
         /// </example>
         [HttpPut(template: "Update/{ArtworkID}")]
@@ -127,7 +127,6 @@ namespace ArtGallery.Controllers
                 return BadRequest(new { message = $"Artist with ID {artworkDto.ArtistID} does not exist" });
             }
 
-            // attempt to find associated artwork in DB by looking up ArtworkId
             var artworkGet = await _context.Artworks.FindAsync(ArtworkID);
 
             if (artworkGet == null)
@@ -135,18 +134,15 @@ namespace ArtGallery.Controllers
                 return NotFound();
             }
 
-            // Update the existing artwork entity with new values
             artworkGet.ArtworkTitle = artworkDto.ArtworkTitle;
             artworkGet.ArtworkMedium = artworkDto.ArtworkMedium;
             artworkGet.ArtworkYearCreated = artworkDto.ArtworkYearCreated;
             artworkGet.ArtistID = artworkDto.ArtistID;
 
-            // flags that the object has changed
             _context.Entry(artworkGet).State = EntityState.Modified;
 
             try
             {
-                // SQL Equivalent: Update artworks set ... where ArtworkID={ArtworkID}
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -169,13 +165,13 @@ namespace ArtGallery.Controllers
         /// <param name="artworkDto">The details of the artwork to add.</param>
         /// <returns>The created Artwork object.</returns>
         /// <example>
-        /// curl -X POST -H "Content-Type: application/json" -d "{\"artworkTitle\": \"New Artwork\", \"artworkMedium\": \"Acrylic on Canvas\", \"artworkYearCreated\": 2025, \"artistID\": 5}" "https://localhost:7237/api/Artworks/Add"
+        /// curl -X POST -H "Content-Type: application/json" -d "{\"artworkTitle\": \"New Artwork\", \"artworkMedium\": \"Acrylic on Canvas\", \"artworkYearCreated\": 2025, \"artistID\": 5}" "https://localhost:7145/api/Artworks/Add"
         /// -> {"artworkID":15,"artworkTitle":"New Artwork","artworkMedium":"Acrylic on Canvas","artworkYearCreated":2025,"artistID":5,"exhibitions":null}
-        /// C:\Users\tongk>curl -X POST -H "Content-Type: application/json" -d "{\"artworkTitle\": \"New Artwork\", \"artworkMedium\": \"Acrylic on Canvas\", \"artworkYearCreated\": 2025, \"artistID\": 4}" "https://localhost:7237/api/Artworks/Add"
+        /// C:\Users\tongk>curl -X POST -H "Content-Type: application/json" -d "{\"artworkTitle\": \"New Artwork\", \"artworkMedium\": \"Acrylic on Canvas\", \"artworkYearCreated\": 2025, \"artistID\": 4}" "https://localhost:7145/api/Artworks/Add"
         /// -> {"message":"Artist with ID 4 does not exist"}
-        /// curl -X POST -H "Content-Type: application/json" -d "{\"artworkTitle\": \"New Artwork\", \"artworkMedium\": \"Acrylic on Canvas\", \"artworkYearCreated\": 2026, \"artistID\": 5}" "https://localhost:7237/api/Artworks/Add"
+        /// curl -X POST -H "Content-Type: application/json" -d "{\"artworkTitle\": \"New Artwork\", \"artworkMedium\": \"Acrylic on Canvas\", \"artworkYearCreated\": 2026, \"artistID\": 5}" "https://localhost:7145/api/Artworks/Add"
         /// -> {"message":"Invalid artwork data"}
-        /// curl -X POST -H "Content-Type: application/json" -d "{\"artworkTitle\": \" \", \"artworkMedium\": \"Acrylic on Canvas\", \"artworkYearCreated\": 2025, \"artistID\": 5}" "https://localhost:7237/api/Artworks/Add"
+        /// curl -X POST -H "Content-Type: application/json" -d "{\"artworkTitle\": \" \", \"artworkMedium\": \"Acrylic on Canvas\", \"artworkYearCreated\": 2025, \"artistID\": 5}" "https://localhost:7145/api/Artworks/Add"
         /// -> {"message":"Invalid artwork data"}
         /// </example>
         [HttpPost(template: "Add")]
@@ -193,7 +189,6 @@ namespace ArtGallery.Controllers
                 return BadRequest(new { message = $"Artist with ID {artworkDto.ArtistID} does not exist" });
             }
 
-            // Create a new Artwork entity from the ArtworkDto
             Artwork artwork = new Artwork
             {
                 ArtworkTitle = artworkDto.ArtworkTitle,
@@ -202,11 +197,9 @@ namespace ArtGallery.Controllers
                 ArtistID = artworkDto.ArtistID
             };
 
-            // Add the new artwork to the database
             _context.Artworks.Add(artwork);
             await _context.SaveChangesAsync();
 
-            // Return the created artwork
             return CreatedAtAction("FindArtwork", new { ArtworkID = artwork.ArtworkID }, artwork);
         }
 
@@ -216,27 +209,25 @@ namespace ArtGallery.Controllers
         /// <param name="id">The ID of the artwork to delete.</param>
         /// <returns>An IActionResult indicating the result of the delete operation.</returns>
         /// <example>
-        /// curl -X DELETE "https://localhost:7237/api/Artworks/Delete/16"
+        /// curl -X DELETE "https://localhost:7145/api/Artworks/Delete/16"
         /// -> (db updated)
-        /// curl -X DELETE "https://localhost:7237/api/Artworks/Delete/16"
+        /// curl -X DELETE "https://localhost:7145/api/Artworks/Delete/16"
         /// -> {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.5","title":"Not Found","status":404,"traceId":"00-ff1d5f16f07554eea66dc625c8550442-a44ec122e7a83285-00"}
         /// </example>
         [HttpDelete("Delete/{id}")]
         [Authorize]
         public async Task<IActionResult> DeleteArtwork(int id)
         {
-            // Attempt to find the artwork in the database by ID
             var artwork = await _context.Artworks.FindAsync(id);
             if (artwork == null)
             {
                 return NotFound();
             }
 
-            // Remove the artwork from the database
             _context.Artworks.Remove(artwork);
             await _context.SaveChangesAsync();
 
-            return NoContent(); // 204 No Content
+            return NoContent();
         }
 
 
@@ -313,7 +304,6 @@ namespace ArtGallery.Controllers
                 }
                 return NoContent();
             }
-
             // If the file was not uploaded successfully, return a BadRequest
             return BadRequest(new { message = "Failed to upload artwork picture." });
         }

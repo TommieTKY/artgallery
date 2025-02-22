@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\image\\artwork\\6.jpg"
     },
     {
+      "Id": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\wwwroot\\image\\artwork\\7.jpg",
+      "PackagePath": "staticwebassets\\image\\artwork\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\wwwroot\\image\\artwork\\8.jpg",
+      "PackagePath": "staticwebassets\\image\\artwork\\8.jpg"
+    },
+    {
       "Id": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

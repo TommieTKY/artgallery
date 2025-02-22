@@ -2,7 +2,7 @@
 
 ---
 
-The ArtGallery project is a web application built using Blazor and .NET 8. It provides a platform for managing art galleries, including artists, artworks, and exhibitions. The application allows users to view, add, update, and delete information related to artists, artworks, and exhibitions.
+ArtGallery is a web application built with Blazor and ASP.NET Core MVC that provides a comprehensive platform for managing and exploring art galleries. The application allows guests to view lists and detailed information about artworks, artists, and exhibitions. Registered users have additional capabilities to create, edit, and delete artworks, artists, and exhibitions, making it a versatile tool for both art enthusiasts and gallery administrators.
 
 ---
 
@@ -18,11 +18,17 @@ The ArtGallery project is a web application built using Blazor and .NET 8. It pr
 
 • Artwork-Exhibition Association: Add and remove artworks from exhibitions.
 
-• View Exhibitions: View a list of exhibitions with their status (past, ongoing, future).
+• View Artists: View a list of artists with details and associated artists.
 
-• View Artworks: View a list of artworks with details and associated exhibitions.
+• View Artworks: View a list of artworks with details and associated artworks.
 
-• View Artists: View a list of artists with details and associated artworks.
+• View Exhibitions: View a list of exhibitions with details and associated exhibitions..
+
+• Extra features:
+
+- Authentication: Secure authentication for creating, editing, and deleting content.
+- Artwork Image Management: Upload and display images for artworks.
+- Exhibition Status: View a list of exhibitions with their status (past, ongoing, future)
 
 ## Technologies Used
 

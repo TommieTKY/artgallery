@@ -2961,6 +2961,170 @@
       ]
     },
     {
+      "Route": "image/artwork/7.fqkcxikatr.jpg",
+      "AssetFile": "image/artwork/7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 07:36:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fqkcxikatr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g="
+        },
+        {
+          "Name": "label",
+          "Value": "image/artwork/7.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "image/artwork/7.jpg",
+      "AssetFile": "image/artwork/7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 07:36:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g="
+        }
+      ]
+    },
+    {
+      "Route": "image/artwork/8.fqkcxikatr.jpg",
+      "AssetFile": "image/artwork/8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 07:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fqkcxikatr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g="
+        },
+        {
+          "Name": "label",
+          "Value": "image/artwork/8.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "image/artwork/8.jpg",
+      "AssetFile": "image/artwork/8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 07:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9/y6PoVOR6QfRIPkL++fJ7x8KPpmhkqwfApi4Jnf71g="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "js/site.js",
       "Selectors": [],
