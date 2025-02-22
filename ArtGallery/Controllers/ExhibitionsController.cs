@@ -41,13 +41,26 @@ namespace ArtGallery.Controllers
                 ExhibitionDto.ExhibitionDescription = Exhibition.ExhibitionDescription;
                 ExhibitionDto.StartDate = Exhibition.StartDate;
                 ExhibitionDto.EndDate = Exhibition.EndDate;
-
                 ExhibitionDto.ArtworkCount = Exhibition.Artworks?.Count ?? 0;
+
+                if (Exhibition.EndDate < DateOnly.FromDateTime(DateTime.Now))
+                {
+                    ExhibitionDto.Status = "Past";
+                }
+                else if (Exhibition.StartDate > DateOnly.FromDateTime(DateTime.Now))
+                {
+                    ExhibitionDto.Status = "Future";
+                }
+                else
+                {
+                    ExhibitionDto.Status = "Ongoing";
+                }
 
                 ExhibitionsDtos.Add(ExhibitionDto);
             }
             return ExhibitionsDtos;
         }
+
 
         /// <summary>
         /// This method receives an ExhibitionID and outputs the Exhibition associated with that ID.

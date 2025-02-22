@@ -18,15 +18,19 @@ The ArtGallery project is a web application built using Blazor and .NET 8. It pr
 
 • Artwork-Exhibition Association: Add and remove artworks from exhibitions.
 
+• View Exhibitions: View a list of exhibitions with their status (past, ongoing, future).
+
+• View Artworks: View a list of artworks with details and associated exhibitions.
+
+• View Artists: View a list of artists with details and associated artworks.
+
 ## Technologies Used
 
-• Blazor: For building interactive web UIs.
-
-• .NET 8: For backend services and APIs.
-
-• Entity Framework Core: For database access and management.
-
-• SQL Server: As the database provider.
+- .NET 8
+- Blazor
+- ASP.NET Core MVC
+- Entity Framework Core
+- Bootstrap
 
 ## Project Structure
 
@@ -35,6 +39,8 @@ The ArtGallery project is a web application built using Blazor and .NET 8. It pr
 • Models: Contains data models representing artists, artworks, and exhibitions.
 
 • Data: Contains the database context and migrations.
+
+• Views: Contains the Razor views for the web pages. These views are used to render the HTML for the web pages.
 
 ## API Endpoints
 

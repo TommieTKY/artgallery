@@ -44,6 +44,11 @@ namespace ArtGallery.Controllers
                 ArtworkDto.ArtistID = Artwork.ArtistID;
                 ArtworkDto.ExhibitionCount = Artwork.Exhibitions?.Count ?? 0;
 
+                if (Artwork.HasPic)
+                {
+                    ArtworkDto.ArtworkImagePath = $"/image/artwork/{Artwork.ArtworkID}{Artwork.PicExtension}";
+                }
+
                 ArtworksDtos.Add(ArtworkDto);
             }
             return ArtworksDtos;

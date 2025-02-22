@@ -24,7 +24,9 @@ namespace ArtGallery.Models
         public DateOnly StartDate { get; set; }
         public DateOnly EndDate { get; set; }
         public int ArtworkCount { get; set; }
+        public string Status { get; set; }
     }
+
 
     public class ExhibitionItemDto
     {

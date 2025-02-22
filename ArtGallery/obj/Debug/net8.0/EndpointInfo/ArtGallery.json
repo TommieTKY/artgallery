@@ -923,6 +923,13 @@
             "type": "integer",
             "format": "int32"
           },
+          "hasArtworkPic": {
+            "type": "boolean"
+          },
+          "artworkImagePath": {
+            "type": "string",
+            "nullable": true
+          },
           "artistID": {
             "type": "integer",
             "format": "int32"
@@ -1040,6 +1047,10 @@
           "artworkCount": {
             "type": "integer",
             "format": "int32"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

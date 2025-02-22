@@ -16,7 +16,13 @@
                 @Html.DisplayNameFor(model => model.ExhibitionTitle)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ArtworkCount)
+                Status
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDate)
             </th>
             <th></th>
         </tr>
@@ -29,7 +35,15 @@
                     @Html.DisplayFor(modelItem => item.ExhibitionTitle)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.ArtworkCount)
+                    <span class="status-label status-@(item.Status.ToLower())">
+                        @item.Status
+                    </span>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDate)
                 </td>
                 <td>
                     <a asp-action="Details" asp-route-id="@item.ExhibitionId">Details</a> |

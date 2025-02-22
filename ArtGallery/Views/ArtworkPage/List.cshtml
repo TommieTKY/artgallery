@@ -16,7 +16,7 @@
                 @Html.DisplayNameFor(model => model.ArtworkTitle)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ExhibitionCount)
+                Image
             </th>
             <th></th>
         </tr>
@@ -29,7 +29,7 @@
                     @Html.DisplayFor(modelItem => item.ArtworkTitle)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.ExhibitionCount)
+                    <img style="width:auto; height:50px;" src="@item.ArtworkImagePath" />
                 </td>
                 <td>
                     <a asp-action="Details" asp-route-id="@item.ArtworkId">Details</a> |
