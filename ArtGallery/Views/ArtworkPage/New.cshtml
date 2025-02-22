@@ -1,39 +1,39 @@
-﻿@model ArtGallery.Models.ArtworkItemDto
+﻿@model ArtGallery.Models.ViewArtworkEdit
 
 @{
-    ViewData["Title"] = "New";
+    ViewData["Title"] = "New Artwork";
 }
 
 <h1>New Artwork</h1>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group mb-4">
-                <label asp-for="ArtworkTitle" class="control-label"></label>
-                <input asp-for="ArtworkTitle" class="form-control" />
-                <span asp-validation-for="ArtworkTitle" class="text-danger"></span>
+                <label asp-for="Artwork.ArtworkTitle" class="control-label"></label>
+                <input asp-for="Artwork.ArtworkTitle" class="form-control" />
+                <span asp-validation-for="Artwork.ArtworkTitle" class="text-danger"></span>
             </div>
             <div class="form-group mb-4">
-                <label asp-for="ArtworkMedium" class="control-label"></label>
-                <input asp-for="ArtworkMedium" class="form-control" />
-                <span asp-validation-for="ArtworkMedium" class="text-danger"></span>
+                <label asp-for="Artwork.ArtworkMedium" class="control-label"></label>
+                <input asp-for="Artwork.ArtworkMedium" class="form-control" />
+                <span asp-validation-for="Artwork.ArtworkMedium" class="text-danger"></span>
             </div>
             <div class="form-group mb-4">
-                <label asp-for="ArtworkYearCreated" class="control-label"></label>
-                <input asp-for="ArtworkYearCreated" class="form-control" type="number" />
-                <span asp-validation-for="ArtworkYearCreated" class="text-danger"></span>
+                <label asp-for="Artwork.ArtworkYearCreated" class="control-label"></label>
+                <input asp-for="Artwork.ArtworkYearCreated" class="form-control" type="number" />
+                <span asp-validation-for="Artwork.ArtworkYearCreated" class="text-danger"></span>
             </div>
             <div class="form-group mb-4">
-                <label for="ArtworkImagePath" class="control-label">Image</label>
-                <input type="file" name="ArtworkImagePath" id="ArtworkImagePath" class="form-control" />
-                <span asp-validation-for="ArtworkImagePath" class="text-danger"></span>
+                <label for="ArtworkPic" class="control-label">Image</label>
+                <input asp-for="ArtworkPic" type="file" class="form-control" />
+                <span asp-validation-for="ArtworkPic" class="text-danger"></span>
             </div>
             <div class="form-group mb-4">
-                <label asp-for="ArtistID" class="control-label"></label>
-                <input asp-for="ArtistID" class="form-control" type="number" />
-                <span asp-validation-for="ArtistID" class="text-danger"></span>
+                <label for="ArtistId" class="control-label">Artist</label>
+                <select asp-for="Artwork.ArtistID" class="form-control" asp-items="@(new SelectList(Model.ArtistList, "ArtistId", "ArtistName"))"></select>
+                <span asp-validation-for="Artwork.ArtistID" class="text-danger"></span>
             </div>
             <div class="form-group mb-1">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -50,6 +50,3 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
-
-
-

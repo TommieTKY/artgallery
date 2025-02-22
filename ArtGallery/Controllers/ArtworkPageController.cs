@@ -2,6 +2,8 @@
 using ArtGallery.Models;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace ArtGallery.Controllers
 {
@@ -51,21 +53,36 @@ namespace ArtGallery.Controllers
         // GET: ArtworkPage/New -> A webpage that prompts the user to enter new artwork information
         [HttpGet]
         [Authorize]
-        public IActionResult New()
+        public async Task<IActionResult> New()
         {
-            return View();
+            var artists = await _artistsApi.List();
+            var model = new ViewArtworkEdit
+            {
+                Artwork = new ArtworkItemDto(),
+                ArtistList = artists.Value.ToList()
+            };
+            ViewData["Title"] = "New Artwork";
+            return View(model);
         }
+
 
         [HttpPost]
         [Authorize]
-        public async Task<IActionResult> Create(string artworkTitle, string artworkMedium, int artworkYearCreated, int artistID, IFormFile ArtworkPic)
+        public async Task<IActionResult> Create(ViewArtworkEdit model)
         {
+            if (!ModelState.IsValid)
+            {
+                // Populate the ArtistList again in case of validation errors
+                model.ArtistList = (await _artistsApi.List()).Value.ToList();
+                return View("New", model);
+            }
+
             var newArtwork = new ArtworkItemDto
             {
-                ArtworkTitle = artworkTitle,
-                ArtworkMedium = artworkMedium,
-                ArtworkYearCreated = artworkYearCreated,
-                ArtistID = artistID
+                ArtworkTitle = model.Artwork.ArtworkTitle,
+                ArtworkMedium = model.Artwork.ArtworkMedium,
+                ArtworkYearCreated = model.Artwork.ArtworkYearCreated,
+                ArtistID = model.Artwork.ArtistID
             };
 
             var result = await _api.AddArtwork(newArtwork);
@@ -85,8 +102,28 @@ namespace ArtGallery.Controllers
             {
                 return View("Error");
             }
+
+            if (model.ArtworkPic != null && model.ArtworkPic.Length > 0)
+            {
+                var imageResult = await _api.UpdateArtworkImage(artwork.ArtworkID, model.ArtworkPic);
+                if (imageResult is NoContentResult)
+                {
+                    newArtwork.HasArtworkPic = true;
+                    newArtwork.ArtworkImagePath = $"/image/artwork/{artwork.ArtworkID}{Path.GetExtension(model.ArtworkPic.FileName)}";
+                }
+                else
+                {
+                    var errorViewModel1 = new ErrorViewModel
+                    {
+                        RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+                    };
+                    return View("Error", errorViewModel1);
+                }
+            }
+
             return RedirectToAction("Details", new { id = artwork.ArtworkID });
         }
+
 
         [HttpGet]
         [Authorize]

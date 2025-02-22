@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\views\\exhibitionpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\views\\exhibitionpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\controllers\\artworkpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\controllers\\artworkpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\models\\viewexhibitionedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\models\\viewexhibitionedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\controllers\\artworkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\controllers\\artworkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\views\\artworkpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\views\\artworkpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,28 +27,20 @@
       "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\views\\artistpage\\new.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\views\\artistpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\views\\artistpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\views\\exhibitionpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\views\\exhibitionpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\views\\artworkpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\views\\artworkpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\models\\artwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\models\\artwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\views\\artistpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\views\\artistpage\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\models\\viewartworkedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\models\\viewartworkedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\controllers\\artworkpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\controllers\\artworkpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\models\\artwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\models\\artwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\models\\viewartworkdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\models\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\models\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\models\\viewexhibitionedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|solutionrelative:artgallery\\models\\viewexhibitionedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96368CBE-2CC9-4909-8EC5-421C5628BF36}|ArtGallery\\ArtGallery.csproj|c:\\users\\tongk\\onedrive\\documents\\http5226_back-end\\artgallery\\artgallery\\views\\exhibitionpage\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -90,24 +94,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "New.cshtml",
-              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtistPage\\New.cshtml",
-              "RelativeDocumentMoniker": "ArtGallery\\Views\\ArtistPage\\New.cshtml",
-              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtistPage\\New.cshtml",
-              "RelativeToolTip": "ArtGallery\\Views\\ArtistPage\\New.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T03:58:41.732Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -123,7 +114,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArtworkPageController.cs",
+              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Controllers\\ArtworkPageController.cs",
+              "RelativeDocumentMoniker": "ArtGallery\\Controllers\\ArtworkPageController.cs",
+              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Controllers\\ArtworkPageController.cs",
+              "RelativeToolTip": "ArtGallery\\Controllers\\ArtworkPageController.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAUwIIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T22:59:12.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtistPage\\New.cshtml",
+              "RelativeDocumentMoniker": "ArtGallery\\Views\\ArtistPage\\New.cshtml",
+              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtistPage\\New.cshtml",
+              "RelativeToolTip": "ArtGallery\\Views\\ArtistPage\\New.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-22T03:58:41.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ViewExhibitionEdit.cs",
+              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Models\\ViewExhibitionEdit.cs",
+              "RelativeDocumentMoniker": "ArtGallery\\Models\\ViewExhibitionEdit.cs",
+              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Models\\ViewExhibitionEdit.cs",
+              "RelativeToolTip": "ArtGallery\\Models\\ViewExhibitionEdit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T00:30:04.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ExhibitionPage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ArtGallery\\Views\\ExhibitionPage\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ExhibitionPage\\Edit.cshtml",
+              "RelativeToolTip": "ArtGallery\\Views\\ExhibitionPage\\Edit.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-22T00:29:48.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "New.cshtml",
+              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtworkPage\\New.cshtml",
+              "RelativeDocumentMoniker": "ArtGallery\\Views\\ArtworkPage\\New.cshtml",
+              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtworkPage\\New.cshtml",
+              "RelativeToolTip": "ArtGallery\\Views\\ArtworkPage\\New.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwCcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-22T00:05:20.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArtworksController.cs",
+              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Controllers\\ArtworksController.cs",
+              "RelativeDocumentMoniker": "ArtGallery\\Controllers\\ArtworksController.cs",
+              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Controllers\\ArtworksController.cs",
+              "RelativeToolTip": "ArtGallery\\Controllers\\ArtworksController.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAAAAwN0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T04:40:43.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtworkPage\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ArtGallery\\Views\\ArtworkPage\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtworkPage\\Edit.cshtml",
+              "RelativeToolTip": "ArtGallery\\Views\\ArtworkPage\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-22T00:03:59.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtistPage\\Edit.cshtml",
               "RelativeDocumentMoniker": "ArtGallery\\Views\\ArtistPage\\Edit.cshtml",
@@ -136,72 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Artwork.cs",
-              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Models\\Artwork.cs",
-              "RelativeDocumentMoniker": "ArtGallery\\Models\\Artwork.cs",
-              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Models\\Artwork.cs",
-              "RelativeToolTip": "ArtGallery\\Models\\Artwork.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAA2wCwAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T23:29:21.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtworkPage\\Edit.cshtml",
-              "RelativeDocumentMoniker": "ArtGallery\\Views\\ArtworkPage\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtworkPage\\Edit.cshtml",
-              "RelativeToolTip": "ArtGallery\\Views\\ArtworkPage\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T00:03:59.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "New.cshtml",
-              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtworkPage\\New.cshtml",
-              "RelativeDocumentMoniker": "ArtGallery\\Views\\ArtworkPage\\New.cshtml",
-              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtworkPage\\New.cshtml",
-              "RelativeToolTip": "ArtGallery\\Views\\ArtworkPage\\New.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T00:05:20.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ArtworkPageController.cs",
-              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Controllers\\ArtworkPageController.cs",
-              "RelativeDocumentMoniker": "ArtGallery\\Controllers\\ArtworkPageController.cs",
-              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Controllers\\ArtworkPageController.cs",
-              "RelativeToolTip": "ArtGallery\\Controllers\\ArtworkPageController.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAuwIcAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T22:59:12.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ExhibitionPage\\Edit.cshtml",
-              "RelativeDocumentMoniker": "ArtGallery\\Views\\ExhibitionPage\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ExhibitionPage\\Edit.cshtml",
-              "RelativeToolTip": "ArtGallery\\Views\\ExhibitionPage\\Edit.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAEAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T00:29:48.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ViewArtworkEdit.cs",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Models\\ViewArtworkEdit.cs",
               "RelativeDocumentMoniker": "ArtGallery\\Models\\ViewArtworkEdit.cs",
@@ -214,7 +231,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
+              "Title": "Artwork.cs",
+              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Models\\Artwork.cs",
+              "RelativeDocumentMoniker": "ArtGallery\\Models\\Artwork.cs",
+              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Models\\Artwork.cs",
+              "RelativeToolTip": "ArtGallery\\Models\\Artwork.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA2wCwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T23:29:21.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ViewArtworkDetails.cs",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Models\\ViewArtworkDetails.cs",
               "RelativeDocumentMoniker": "ArtGallery\\Models\\ViewArtworkDetails.cs",
@@ -222,12 +251,11 @@
               "RelativeToolTip": "ArtGallery\\Models\\ViewArtworkDetails.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T00:42:10.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T00:42:10.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ExhibitionPage\\Details.cshtml",
               "RelativeDocumentMoniker": "ArtGallery\\Views\\ExhibitionPage\\Details.cshtml",
@@ -235,12 +263,11 @@
               "RelativeToolTip": "ArtGallery\\Views\\ExhibitionPage\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T00:31:21.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T00:31:21.039Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ArtworkPage\\Details.cshtml",
               "RelativeDocumentMoniker": "ArtGallery\\Views\\ArtworkPage\\Details.cshtml",
@@ -248,12 +275,11 @@
               "RelativeToolTip": "ArtGallery\\Views\\ArtworkPage\\Details.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T00:13:03.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T00:13:03.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Artist.cs",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Models\\Artist.cs",
               "RelativeDocumentMoniker": "ArtGallery\\Models\\Artist.cs",
@@ -261,24 +287,11 @@
               "RelativeToolTip": "ArtGallery\\Models\\Artist.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAA5wBkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T23:33:28.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T23:33:28.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ViewExhibitionEdit.cs",
-              "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Models\\ViewExhibitionEdit.cs",
-              "RelativeDocumentMoniker": "ArtGallery\\Models\\ViewExhibitionEdit.cs",
-              "ToolTip": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Models\\ViewExhibitionEdit.cs",
-              "RelativeToolTip": "ArtGallery\\Models\\ViewExhibitionEdit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T00:30:04.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "List.cshtml",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\ExhibitionPage\\List.cshtml",
               "RelativeDocumentMoniker": "ArtGallery\\Views\\ExhibitionPage\\List.cshtml",
@@ -290,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "ArtGallery\\Data\\ApplicationDbContext.cs",
@@ -302,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\appsettings.json",
               "RelativeDocumentMoniker": "ArtGallery\\appsettings.json",
@@ -314,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "ArtGallery\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -326,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ArtGallery\\Views\\Shared\\_Layout.cshtml",
@@ -338,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ExhibitionsController.cs",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Controllers\\ExhibitionsController.cs",
               "RelativeDocumentMoniker": "ArtGallery\\Controllers\\ExhibitionsController.cs",
@@ -350,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ArtistsController.cs",
               "DocumentMoniker": "C:\\Users\\tongk\\OneDrive\\Documents\\http5226_Back-End\\ArtGallery\\ArtGallery\\Controllers\\ArtistsController.cs",
               "RelativeDocumentMoniker": "ArtGallery\\Controllers\\ArtistsController.cs",

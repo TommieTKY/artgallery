@@ -235,7 +235,6 @@ namespace ArtGallery.Controllers
         }
 
 
-
         [HttpPost("UpdateArtworkImage/{id}")]
         [Authorize]
         public async Task<IActionResult> UpdateArtworkImage(int id, IFormFile ArtworkPic)

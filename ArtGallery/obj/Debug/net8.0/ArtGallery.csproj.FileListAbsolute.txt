@@ -158,3 +158,4 @@ C:\Users\tongk\OneDrive\Documents\http5226_Back-End\ArtGallery\ArtGallery\bin\De
 C:\Users\tongk\OneDrive\Documents\http5226_Back-End\ArtGallery\ArtGallery\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\tongk\OneDrive\Documents\http5226_Back-End\ArtGallery\ArtGallery\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\tongk\OneDrive\Documents\http5226_Back-End\ArtGallery\ArtGallery\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\tongk\OneDrive\Documents\http5226_Back-End\ArtGallery\ArtGallery\obj\Debug\net8.0\ArtGallery.sourcelink.json
