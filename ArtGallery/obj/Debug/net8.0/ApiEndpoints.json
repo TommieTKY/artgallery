@@ -1,0 +1,402 @@
+[
+  {
+    "ContainingType": "ArtGallery.Controllers.ArtistsController",
+    "Method": "AddArtist",
+    "RelativePath": "api/Artists/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artistDto",
+        "Type": "ArtGallery.Models.ArtistPersonDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ArtGallery.Models.Artist",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ArtistsController",
+    "Method": "DeleteArtist",
+    "RelativePath": "api/Artists/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ArtistsController",
+    "Method": "FindArtist",
+    "RelativePath": "api/Artists/FindArtist/{ArtistID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ArtistID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ArtGallery.Models.ArtistPersonDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ArtistsController",
+    "Method": "List",
+    "RelativePath": "api/Artists/List",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ArtGallery.Models.ArtistToListDto, ArtGallery, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ArtistsController",
+    "Method": "UpdateArtist",
+    "RelativePath": "api/Artists/Update/{ArtistID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ArtistID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "artistDto",
+        "Type": "ArtGallery.Models.ArtistPersonDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ArtworksController",
+    "Method": "AddArtwork",
+    "RelativePath": "api/Artworks/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artworkDto",
+        "Type": "ArtGallery.Models.ArtworkItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ArtGallery.Models.Artwork",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ArtworksController",
+    "Method": "DeleteArtwork",
+    "RelativePath": "api/Artworks/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ArtworksController",
+    "Method": "FindArtwork",
+    "RelativePath": "api/Artworks/FindArtwork/{ArtworkID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ArtworkID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ArtGallery.Models.ArtworkItemDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ArtworksController",
+    "Method": "List",
+    "RelativePath": "api/Artworks/List",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ArtGallery.Models.ArtworkToListDto, ArtGallery, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ArtworksController",
+    "Method": "UpdateArtwork",
+    "RelativePath": "api/Artworks/Update/{ArtworkID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ArtworkID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "artworkDto",
+        "Type": "ArtGallery.Models.ArtworkItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ArtworksController",
+    "Method": "UpdateArtworkImage",
+    "RelativePath": "api/Artworks/UpdateArtworkImage/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ArtworkPic",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ExhibitionsController",
+    "Method": "AddExhibition",
+    "RelativePath": "api/Exhibitions/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "exhibitionDto",
+        "Type": "ArtGallery.Models.ExhibitionItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ArtGallery.Models.Exhibition",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ExhibitionsController",
+    "Method": "AddArtworkToExhibition",
+    "RelativePath": "api/Exhibitions/AddArtwork/{ExhibitionID}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ExhibitionID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "artworkIdDto",
+        "Type": "ArtGallery.Models.ArtworkIdDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ArtGallery.Models.Exhibition",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ExhibitionsController",
+    "Method": "DeleteExhibition",
+    "RelativePath": "api/Exhibitions/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ExhibitionsController",
+    "Method": "DeleteArtworkFromExhibition",
+    "RelativePath": "api/Exhibitions/DeleteArtwork/{ExhibitionID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ExhibitionID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "artworkIdDto",
+        "Type": "ArtGallery.Models.ArtworkIdDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ExhibitionsController",
+    "Method": "FindExhibition",
+    "RelativePath": "api/Exhibitions/FindExhibition/{ExhibitionID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ExhibitionID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ArtGallery.Models.ExhibitionItemDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ExhibitionsController",
+    "Method": "List",
+    "RelativePath": "api/Exhibitions/List",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ArtGallery.Models.ExhibitionToListDto, ArtGallery, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ArtGallery.Controllers.ExhibitionsController",
+    "Method": "UpdateExhibition",
+    "RelativePath": "api/Exhibitions/Update/{ExhibitionID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ExhibitionID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "exhibitionDto",
+        "Type": "ArtGallery.Models.ExhibitionItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

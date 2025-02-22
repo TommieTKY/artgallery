@@ -1,0 +1,55 @@
+﻿@model ArtGallery.Models.ArtworkItemDto
+
+@{
+    ViewData["Title"] = "New";
+}
+
+<h1>New Artwork</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-4">
+                <label asp-for="ArtworkTitle" class="control-label"></label>
+                <input asp-for="ArtworkTitle" class="form-control" />
+                <span asp-validation-for="ArtworkTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="ArtworkMedium" class="control-label"></label>
+                <input asp-for="ArtworkMedium" class="form-control" />
+                <span asp-validation-for="ArtworkMedium" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="ArtworkYearCreated" class="control-label"></label>
+                <input asp-for="ArtworkYearCreated" class="form-control" type="number" />
+                <span asp-validation-for="ArtworkYearCreated" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label for="ArtworkImagePath" class="control-label">Image</label>
+                <input type="file" name="ArtworkImagePath" id="ArtworkImagePath" class="form-control" />
+                <span asp-validation-for="ArtworkImagePath" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="ArtistID" class="control-label"></label>
+                <input asp-for="ArtistID" class="form-control" type="number" />
+                <span asp-validation-for="ArtistID" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-1">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="List">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+

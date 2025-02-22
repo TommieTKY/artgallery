@@ -1,0 +1,80 @@
+﻿@model ArtGallery.Models.ViewExhibitionEdit
+
+@{
+    ViewData["Title"] = "Edit Exhibition";
+}
+
+<h1>Edit Exhibition</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Update" asp-route-id="@Model.Exhibition.ExhibitionId">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Exhibition.ExhibitionId" />
+            <div class="form-group mb-4">
+                <label asp-for="Exhibition.ExhibitionTitle" class="control-label"></label>
+                <input asp-for="Exhibition.ExhibitionTitle" class="form-control" />
+                <span asp-validation-for="Exhibition.ExhibitionTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Exhibition.ExhibitionDescription" class="control-label"></label>
+                <textarea asp-for="Exhibition.ExhibitionDescription" class="form-control" rows="4" cols="50"></textarea>
+                <span asp-validation-for="Exhibition.ExhibitionDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Exhibition.StartDate" class="control-label"></label>
+                <input asp-for="Exhibition.StartDate" class="form-control" type="date" />
+                <span asp-validation-for="Exhibition.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Exhibition.EndDate" class="control-label"></label>
+                <input asp-for="Exhibition.EndDate" class="form-control" type="date" />
+                <span asp-validation-for="Exhibition.EndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <h4>Manage Artworks</h4>
+        <hr />
+        <h5>Current Artworks</h5>
+        <ul>
+            @foreach (var artwork in Model.Exhibition.ListArtworks)
+            {
+                <li>
+                    @artwork.ArtworkTitle
+                    <form asp-action="RemoveArtwork" asp-route-exhibitionId="@Model.Exhibition.ExhibitionId" asp-route-artworkId="@artwork.ArtworkId" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                    </form>
+                </li>
+            }
+        </ul>
+        <h5>Add New Artwork</h5>
+        <form asp-action="AddArtwork" asp-route-exhibitionId="@Model.Exhibition.ExhibitionId" method="post">
+            <div class="form-group mb-4">
+                <label for="newArtworkId" class="control-label">Artwork</label>
+                <select id="newArtworkId" name="newArtworkId" class="form-control">
+                    @foreach (var artwork in @Model.ArtworkList)
+                    {
+                        <option value="@artwork.ArtworkId">@artwork.ArtworkTitle</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group mb-5">
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="List">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

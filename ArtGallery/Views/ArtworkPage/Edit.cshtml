@@ -1,0 +1,54 @@
+﻿@model ArtGallery.Models.ViewArtworkEdit
+
+@{
+    ViewData["Title"] = "Edit Artwork";
+}
+
+<h1>Edit Artwork</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Update" asp-route-id="@Model.Artwork.ArtworkId" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Artwork.ArtworkId" />
+            <div class="form-group mb-4">
+                <label asp-for="Artwork.ArtworkTitle" class="control-label"></label>
+                <input asp-for="Artwork.ArtworkTitle" class="form-control" />
+                <span asp-validation-for="Artwork.ArtworkTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Artwork.ArtworkMedium" class="control-label"></label>
+                <input asp-for="Artwork.ArtworkMedium" class="form-control" />
+                <span asp-validation-for="Artwork.ArtworkMedium" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Artwork.ArtworkYearCreated" class="control-label"></label>
+                <input asp-for="Artwork.ArtworkYearCreated" class="form-control" type="number" />
+                <span asp-validation-for="Artwork.ArtworkYearCreated" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label for="ArtworkPic" class="control-label">Image</label>
+                <input asp-for="ArtworkPic" type="file" class="form-control" />
+                <span asp-validation-for="ArtworkPic" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label for="ArtistId" class="control-label">Artist</label>
+                <select asp-for="Artwork.ArtistID" class="form-control" asp-items="@(new SelectList(Model.ArtistList, "ArtistId", "ArtistName"))"></select>
+                <span asp-validation-for="Artwork.ArtistID" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-5">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="List">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,67 @@
+﻿@model ArtGallery.Models.ViewArtworkDetails
+
+@{
+    ViewData["Title"] = "View Artwork";
+}
+
+<h1>View Artwork</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>Artwork Information</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Artwork.ArtworkTitle)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Artwork.ArtworkTitle)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Artwork.ArtworkMedium)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Artwork.ArtworkMedium)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Artwork.ArtworkYearCreated)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Artwork.ArtworkYearCreated)
+            </dd>
+            @if (Model.Artwork.HasArtworkPic)
+            {
+                <dt class="col-sm-4">
+                    Artwork Image
+                </dt>
+                <dd class="col-sm-8">
+                    <img style="width:150px; height:auto;" src="@Model.Artwork.ArtworkImagePath" />
+                </dd>
+            }
+            <dt class="col-sm-4">
+                Artist
+            </dt>
+            <dd class="col-sm-8">
+                <a href="/ArtistPage/Details/@Model.Artist.ArtistId">@Html.DisplayFor(model => model.Artist.ArtistName)</a>
+            </dd>
+        </dl>
+    </div>
+    <div class="col-md-6">
+        <h4>Exhibitions</h4>
+        <hr />
+        <ul>
+            @foreach (var exhibition in Model?.Artwork.ListExhibitions ?? [])
+            {
+                <li>
+                    <a href="/ExhibitionPage/Details/@exhibition.ExhibitionId">@exhibition.ExhibitionTitle</a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Artwork.ArtworkId">Edit</a> |
+    <a asp-action="ConfirmDelete" asp-route-id="@Model.Artwork.ArtworkId">Delete</a> |
+    <a asp-action="List">Back to List</a>
+</div>

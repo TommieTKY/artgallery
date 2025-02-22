@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ArtGallery.Models.ArtistToListDto>
+
+@{
+    ViewData["Title"] = "Artists";
+}
+
+<h1>Artists</h1>
+
+<p>
+    <a asp-action="New">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ArtistName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ArtworkCount)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ArtistName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ArtworkCount)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ArtistId">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@item.ArtistId">Edit</a> |
+                    <a asp-action="ConfirmDelete" asp-route-id="@item.ArtistId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
