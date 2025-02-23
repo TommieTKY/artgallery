@@ -4,8 +4,7 @@
 
 ArtGallery is a web application built with Blazor and ASP.NET Core MVC that provides a comprehensive platform for managing and exploring art galleries. The application allows guests to view lists and detailed information about artworks, artists, and exhibitions. Registered users have additional capabilities to create, edit, and delete artworks, artists, and exhibitions, making it a versatile tool for both art enthusiasts and gallery administrators.
 
-Presentation Video:
-[presentation](https://youtu.be/D-xBUHYTuz4)
+[Presentation Video](https://youtu.be/D-xBUHYTuz4)
 
 ---
 
